@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="static/main.css" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta content=”email=no” name=”format-detection” /> 
+</head>
+
+<body>
+    <div class="Page">
+        <div class="Title"></div>
+        <div class="Main">
+            <table class="Information" border="1">
+                <tbody>
+                    <tr>
+                        <th colspan="4" class="InfMain">主观感觉</th>
+                        <th class="InfMain">建造年限</th>
+                    </tr>
+                    <tr>
+                        <th class="InfObj">色泽（鲜艳、中等、灰暗）</th>
+                        <th class="InfObj">弹性（好、中、差）</th>
+                        <th class="InfObj">裂缝、缺损（无、有）</th>
+                        <th class="InfObj">合计</th>
+                    </tr>
+                    <tr>
+                        <th contenteditable="true" class="Inf-input" oninput="operateperson()" id="person-1"></th>
+                        <th contenteditable="true" class="Inf-input" oninput="operateperson()" id="person-2"></th>
+                        <th contenteditable="true" class="Inf-input" oninput="operateperson()" id="person-3"></th>
+                        <th class="InfObj" id="person-res"></th>
+                        <th contenteditable="true" class="Inf-input"></th>
+                    </tr>
+                    <tr>
+                        <th colspan="5" class="InfMain">超声声像图表现</th>
+                    </tr>
+                    <tr>
+                        <th class="InfObj">柔和、中等、僵硬）</th>
+                        <th class="InfObj">颗粒感（有、少、无）</th>
+                        <th class="InfObj">断层（有、无）</th>
+                        <th class="InfObj">底层异物（有、无）</th>
+                        <th class="InfObj">合计</th>
+                    </tr>
+                    <tr>
+                        <th contenteditable="true" class="Inf-input" oninput="operatexray()" id="xray-1"></th>
+                        <th contenteditable="true" class="Inf-input" oninput="operatexray()" id="xray-2"></th>
+                        <th contenteditable="true" class="Inf-input" oninput="operatexray()" id="xray-3"></th>
+                        <th contenteditable="true" class="Inf-input" oninput="operatexray()" id="xray-4"></th>
+                        <th class="InfObj" id="xray-res"></th>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="Resphoto">
+                <p id="int-show">主观感觉:</p>
+                <div id="person-photo"></div>
+                <p id="int-show">超声表现:</p>
+                <div id="xray-photo"></div>
+            </div>
+            <p id="Res"></p>
+        </div>
+    </div>
+    <script type="text/javascript" src="static/main.js"></script>
+</body>
+
+</html>

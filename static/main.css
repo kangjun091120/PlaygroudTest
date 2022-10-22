@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all （移动端不需要） */
+    -ms-user-select: none;      /* IE 10+ */ 
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img { -webkit-touch-callout: none; }
+
+html {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, rgb(127, 127, 213), rgb(134, 168, 231), rgb(145, 234, 228));
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+table.Information {
+    font-size: 90%;
+    border: 0;
+}
+
+th.InfMain {
+    border: 2.3px solid rgb(99, 121, 161);
+}
+
+th.InfObj {
+    border: 1px solid rgb(99, 121, 161);
+}
+
+.Inf-input {
+    height: 100%;
+    border: 1px solid rgb(99, 121, 161);
+}
+
+#Resphoto {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 20%;
+}
+
+#person-photo {
+    position: relative;
+    left: 15%;
+    margin-top: 25px;
+    height: 13px;
+    width: 80%;
+    background-color: black;
+    border-radius: 50px;
+    transition: all 500ms ease-in-out 200ms;
+}
+
+#int-show {
+    position: relative;
+    top:40px;
+}
+
+#xray-photo {
+    position: relative;
+    left: 15%;
+    margin-top: 25px;
+    height: 13px;
+    width: 80%;
+    background-color: black;
+    border-radius: 50px;
+    transition: all 500ms ease-in-out 200ms;
+}
